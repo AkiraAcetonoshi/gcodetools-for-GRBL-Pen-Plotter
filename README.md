@@ -1,27 +1,17 @@
-gcodetools
-==========
+# Gcodetools for GRBL Pen Plotter
 
-CAM extension for Inkscape to export paths to Gcode 
+Gcodetools is an Inkscape extensions for generating [G-Code](https://en.wikipedia.org/wiki/G-code) for a [GRBL](https://github.com/grbl/grbl) pen plotter. It has been tested only on a GRBL pen plotter with a motor-actuated Z axis. It will likely not work for a servo-actuated pen plotter. 
+It is based on [Gcodetools](https://github.com/cnc-club/gcodetools) by Nick Drobchenko, Vladimir Kalyaev, John Brooker, Henry Nicolas, Chris Lusby Taylor. No much was done apart from unifying "orientation points", "tools library" and "path to g code" into one extension. And messing with the *.py file.
 
-More info at http://www.cnc-club.ru/forum/viewtopic.php?t=35
+# Installation
+
+For windows put both .inx and .py files in the extensions folder :
+
+`C:\Program Files\Inkscape\share\inkscape\extensions\other\Gcodetools-for-GRBL-Pen-Plotter` 
+
+Please create a separate folder from Gcodetools, as the *.py file was modified otherwise you risk breaking the original Gcodetools.
 
 
-License
-==========
-Inkscape and Gcodetools are licensed under GNU GPL.
+# Warning
 
-
-
-Install
-==========
-Windows
-
-Unpack and copy all the files to the following directory Program Files\Inkscape\share\extensions\ and restart inkscape.
-
-Execute python create_inx.py to create all inx-files.
-
-Linux
-
-Unpack and copy all the files to the following directory /usr/share/inkscape/extensions/ and restart inkscape.
-
-Execute python create_inx.py to create all inx-files.
+This extension will probably not be maintained by me. Use at your own risk.
